@@ -16,6 +16,10 @@
 		<ApplicationIcon>charm.ico</ApplicationIcon>
 		<RunPostBuildEvent>Always</RunPostBuildEvent>
     </PropertyGroup>
+	
+  <PropertyGroup>
+    <SolutionDir Condition="'$(SolutionDir)' == '' Or '$(SolutionDir)' == '*Undefined*'">$(MSBuildProjectDirectory)\..\</SolutionDir>
+  </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="ConcurrentHashSet" Version="1.3.0" />

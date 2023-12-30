@@ -1,0 +1,24 @@
+{
+  "Common": {
+    "PackagesPath": {},
+    "CurrentStrategy": 0,
+    "ExportPath": "",
+    "SingleFolderMapsEnabled": true,
+    "IndividualStaticsEnabled": true,
+    "OutputTextureFormat": 0,
+    "UseCustomRenderer": false
+  },
+  "Unreal": {
+    "UnrealInteropEnabled": false,
+    "UnrealInteropPath": ""
+  },
+  "Blender": {
+    "BlenderInteropEnabled": false
+  },
+  "Source2": {
+    "Source2VShaderExportsEnabled": false,
+    "Source2VMATExportsEnabled": false,
+    "Source2VMDLExportsEnabled": false,
+    "Source2Path": ""
+  }
+}

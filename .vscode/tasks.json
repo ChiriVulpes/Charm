@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Atlas",
+			"type": "shell",
+			"command": "msbuild /property:Configuration=Debug /property:Platform=x64 /m /p:VisualStudioVersion=16.0",
+			"options": {
+				"cwd": "${workspaceFolder}/Atlas"
+			},
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Build Charm",
+			"type": "dotnet",
+			"task": "build c:\\git\\ext\\destiny\\Charm\\Charm\\Charm.csproj",
+			"file": "c:\\git\\ext\\destiny\\Charm\\Charm\\Charm.csproj",
+			"group": "build",
+			"problemMatcher": [],
+			"dependsOn": "Build Atlas"
+		},
+		{
+			"label": "Launch Charm",
+			"type": "shell",
+			"command": "${workspaceFolder}/Charm/bin/Debug/net7.0-windows/Charm.exe",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"dependsOn": "Build Charm"
+		}
+	]
+}

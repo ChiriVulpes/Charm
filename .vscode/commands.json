@@ -1,0 +1,10 @@
+{
+	"commands": [
+		{
+			"command": "workbench.action.tasks.runTask",
+			"text": "$(rocket)  Build & Launch Charm",
+			"tooltip": "Builds the solution & launches",
+			"arguments": ["Launch Charm"]
+		}
+	]
+}
