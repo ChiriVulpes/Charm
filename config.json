@@ -1,11 +1,13 @@
 {
   "Common": {
-    "PackagesPath": {},
-    "CurrentStrategy": 0,
-    "ExportPath": "",
-    "SingleFolderMapsEnabled": true,
+    "PackagesPath": {
+      "DESTINY2_LATEST": "C:\\steam\\common\\Destiny 2\\packages"
+    },
+    "CurrentStrategy": 20000,
+    "ExportPath": "C:\\git\\web\\deepsight.gg\\charm",
+    "SingleFolderMapsEnabled": false,
     "IndividualStaticsEnabled": true,
-    "OutputTextureFormat": 0,
+    "OutputTextureFormat": 3,
     "UseCustomRenderer": false
   },
   "Unreal": {
